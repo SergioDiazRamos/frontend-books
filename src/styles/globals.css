@@ -24,3 +24,17 @@ a {
     background: black;
   }
 }
+
+.container {
+  padding: 0 2rem;
+}
+
+.error {
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.eliminar {
+  display: inline;
+}
