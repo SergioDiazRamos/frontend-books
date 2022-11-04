@@ -77,5 +77,18 @@ export const getStaticProps = async (ctx) => {
     props: {
       books: data,
     },
+    revalidate: 10, // Tiempo en segundos
   };
 };
+
+// Otra solución
+// export const getServerSideProps = async (ctx) => {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/books`);
+//   const data = await res.json();
+
+//   return {
+//     props: {
+//       books: data,
+//     },
+//   };
+// };
